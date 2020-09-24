@@ -65,7 +65,7 @@ window.addEventListener("load", function() {
             launchStatusUpdate.style.color = "red";
          
          //Now we need to make sure there isn't too much weight
-         } else if (cargoMassInput.value > 1000) {
+         } else if (cargoMassInput.value > 10000) {
             faultyItemsUpdate.style.visibility = "visible";
             cargoStatusUpdate.innerHTML = `${cargoMassInput.value} kilograms is too much weight for the shuttle to take off!  The cargo mass must be less than 10,000 kilograms!`;
             launchStatusUpdate.innerHTML = "Shuttle not ready for launch";
